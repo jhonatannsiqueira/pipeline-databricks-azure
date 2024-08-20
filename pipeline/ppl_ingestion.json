@@ -1,6 +1,41 @@
 {
 	"name": "ppl_ingestion",
 	"properties": {
+		"activities": [
+			{
+				"name": "ingestion_Camada_Bronze",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 2,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			},
+			{
+				"name": "ingestion_Camada_Silver",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "ingestion_Camada_Bronze",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 2,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
 		"annotations": []
 	}
 }
