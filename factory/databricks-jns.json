@@ -1,0 +1,9 @@
+{
+	"name": "databricks-jns",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4d4aa2e5-ebf1-4598-8f9a-90e410d1c17b",
+		"tenantId": "a93efc2f-78f6-4800-8f76-54af9ef48a05"
+	}
+}
