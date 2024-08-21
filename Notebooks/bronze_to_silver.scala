@@ -1,6 +1,6 @@
 // Databricks notebook source
 // MAGIC %md
-// MAGIC **Conferindo se os Dados foram montados e se temos acesso a Pasta Bronze**
+// MAGIC **Conferindo se os dados foram montados e se temos acesso a pasta bronze**
 
 // COMMAND ----------
 
@@ -10,7 +10,7 @@
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Lendo os Dados na Camada Bronze**
+// MAGIC ## Lendo os dados na camada bronze
 
 // COMMAND ----------
 
@@ -24,7 +24,7 @@ display(df)
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Transformando os Campos do Json em Coluna**
+// MAGIC ## Transformando os campos do json em colunas
 
 // COMMAND ----------
 
@@ -34,7 +34,7 @@ display(df.select("anuncio.*"))
 
 display(
   df.select("anuncio.*", "anuncio.endereco.*")
-  )
+)
 
 // COMMAND ----------
 
@@ -47,7 +47,7 @@ display(dados_detalhados)
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Removendo Colunas**
+// MAGIC ## Removendo colunas
 
 // COMMAND ----------
 
@@ -57,7 +57,7 @@ display(df_silver)
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Salvando na Camada Silver**
+// MAGIC ## Salvando na camada silver
 
 // COMMAND ----------
 

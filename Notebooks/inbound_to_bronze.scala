@@ -1,6 +1,6 @@
 // Databricks notebook source
 // MAGIC %md
-// MAGIC **Conferindo se os Dados foram montados e se tenho acesso a Pasta inbound**
+// MAGIC **Conferindo se os dados foram montados e se temos acesso a pasta inbound**
 
 // COMMAND ----------
 
@@ -10,7 +10,7 @@
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Lendo os Dados na Camada inbound**
+// MAGIC ## Lendo os dados na camada de inbound
 
 // COMMAND ----------
 
@@ -24,7 +24,7 @@ display(dados)
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Removendo Colunas**
+// MAGIC ## Removendo colunas
 
 // COMMAND ----------
 
@@ -34,7 +34,7 @@ display(dados_anuncio)
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Criando uma Coluna de Identificação**
+// MAGIC ## Criando uma coluna de identificação
 
 // COMMAND ----------
 
@@ -48,7 +48,7 @@ display(df_bronze)
 // COMMAND ----------
 
 // MAGIC %md
-// MAGIC **Salvando na Camada Bronze**
+// MAGIC ## Salvando na camada bronze
 
 // COMMAND ----------
 
